@@ -30,8 +30,12 @@
 <body>
     <div id="tools">
         <button onclick="undo()">Undo</button>
+        <button onclick="redo()">Redo</button>
+
         <button onclick="setTool('pen')">Pen</button>
         <button onclick="setTool('line')">Line</button>
+        <button onclick="setTool('rect')">Rect</button>
+        <button onclick="setTool('circle')">Circle</button>
 
         <button onclick="changeColor('#ff0000')">Red</button>
         <button onclick="changeColor('#000000')">Black</button>
@@ -59,6 +63,9 @@
     }
     function undo(){
         p.undo();
+    }
+    function redo(){
+        p.redo();
     }
 </script>
 </html>
