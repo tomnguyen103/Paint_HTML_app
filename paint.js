@@ -106,6 +106,8 @@ class paint{
     }
 
     drawRect(startPos, endPos){
+        this.ctx.lineWidth = this.lineWidth;
+        this.ctx.strokeStyle = this.color;
         this.ctx.beginPath();
         this.ctx.rect(
             startPos.x, 
@@ -117,6 +119,8 @@ class paint{
     }
 
     drawCircle(startPos, endPos){
+        this.ctx.lineWidth = this.lineWidth;
+        this.ctx.strokeStyle = this.color;
         var radiusX = endPos.x - startPos.x;
         var radiusY = endPos.y - startPos.y;
         this.ctx.beginPath();
