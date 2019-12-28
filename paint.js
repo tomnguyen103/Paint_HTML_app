@@ -62,9 +62,9 @@ class paint{
                     this.undo();
                     this.drawRect(this.startPos, mousePos)
                 break;
-                case 'rect':
+                case 'circle':
                     this.undo();
-                    this.drawRect(this.startPos, mousePos)
+                    this.drawCircle(this.startPos, mousePos)
                 break;
             }
             // this.drawLine(this.currentPos, mousePos);
@@ -113,6 +113,15 @@ class paint{
             endPos.x - startPos.x,
             endPos.y - startPos.y
         );
+        this.ctx.stroke();
+    }
+
+    drawCircle(startPos, endPos){
+        var radiusX = endPos.x - startPos.x;
+        var radiusY = endPos.y - startPos.y;
+        this.ctx.beginPath();
+        this.ctx.arc(startPos.x, startPos.y, 2*(radiusX-radiusY), 0, Math.PI*2);
+        this.ctx.fill();
         this.ctx.stroke();
     }
 
