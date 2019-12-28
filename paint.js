@@ -106,9 +106,9 @@ class paint{
     }
 
     drawRect(startPos, endPos){
+        this.ctx.beginPath();
         this.ctx.lineWidth = this.lineWidth;
         this.ctx.strokeStyle = this.color;
-        this.ctx.beginPath();
         this.ctx.rect(
             startPos.x, 
             startPos.y, 
@@ -119,20 +119,19 @@ class paint{
     }
 
     drawCircle(startPos, endPos){
-        this.ctx.lineWidth = this.lineWidth;
-        this.ctx.strokeStyle = this.color;
+        this.ctx.beginPath();
         var radiusX = endPos.x - startPos.x;
         var radiusY = endPos.y - startPos.y;
-        this.ctx.beginPath();
+        this.ctx.lineWidth = this.lineWidth;
+        this.ctx.strokeStyle = this.color;
         this.ctx.arc(startPos.x, startPos.y, 2*(radiusX-radiusY), 0, Math.PI*2);
-        this.ctx.fill();
         this.ctx.stroke();
     }
 
     drawLine(startPos, endPos){
+        this.ctx.beginPath();
         this.ctx.lineWidth = this.lineWidth;
         this.ctx.strokeStyle = this.color;
-        this.ctx.beginPath();
         this.ctx.moveTo(startPos.x, startPos.y);
         this.ctx.lineTo(endPos.x, endPos.y);
         this.ctx.stroke();
