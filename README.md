@@ -6,4 +6,4 @@ Ultilize HTML Canvas with several functions included drawing a line, rectangel, 
 
 My plan is using this Simple Paint HTML app to explore Machine Learning Model using ml5js or TensorFlow for Image Training and Recognization.
 
-Technology: HTML Canvas and HTML DOM
+Technology: HTML Canvas, HTML DOM, JavaScript, CSS
