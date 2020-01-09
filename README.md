@@ -1,11 +1,13 @@
 # Paint_HTML_app
 
-A Simple HTML Draw Application
+![Paint HTML APP](https://i.imgur.com/uw70rQj.png)
 
-Ultilize HTML Canvas with several functions included drawing a line, rectangel, or free draw with color selected.
+* A Simple HTML Draw Application
 
-My plan is using this Simple Paint HTML app to explore Machine Learning Model using ml5js or TensorFlow for Image Training and Recognization.
+* Ultilize HTML Canvas with several functions included drawing a line, rectangel, or free draw with color selected.
 
-Technology: HTML Canvas, HTML DOM, JavaScript, CSS
+* My plan is using this Simple Paint HTML app to explore Machine Learning Model using ml5js or TensorFlow for Image Training and * Recognization.
 
-Time of development: 3 days
+* Technology: HTML Canvas, HTML DOM, JavaScript, CSS
+
+**Time of development: 3 days**
